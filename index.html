@@ -1,24 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Alex Gong - Portfolio</title>
-  <link href="styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Gong - Portfolio</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .profile-section {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .profile-section h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .profile-section p {
+            margin: 5px 0;
+        }
+        .experience, .certifications {
+            margin-top: 20px;
+        }
+        .experience h3, .certifications h3 {
+            color: #444;
+            margin-bottom: 10px;
+        }
+        .experience-item, .certification-item {
+            background: #f9f9f9;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
-  <h1>Alex Gong Portfolio</h1>
-  <audio controls>
-    <source src="Photo & Audio/your-audio-file.ogg" type="audio/ogg">
-    Your browser does not support the audio element.
-  </audio>
-  <img src="Photo & Audio/babyalex.jpg" width="25%" height="25%" alt="Alex Gong">
-  <h2>I am a junior at Vernon Hills High School taking my first coding class because my Water Polo coach is the teacher.</h2>
-  <ul>
-    <li>I am on the Varsity Water Polo team for the 3rd year where I am the team's starting Goalie.</li>
-    <li>I am also on the Varsity diving team for the 3rd year. Last year I was on the conference and sectional teams.</li>
-    <li>I am also starting Cross Country this year, in order to achieve the school's "3 Sport Senior" badge.</li>
-  </ul>
-  <script src="script.js"></script>
-</body>
-</html>
+
+    <header>
+        <h1>Alex Gong Portfolio</h1>
+        <audio controls>
+            <source src="Photo & Audio/your-audio-file.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <img src="Photo & Audio/babyalex.jpg" width="25%" height="25%" alt="Alex Gong">
+        <h2>I am a junior at Vernon Hills High School taking my first coding class because my Water Polo coach is the teacher.</h2>
+        <ul>
+            <li>I am on the Varsity Water Polo team for the 3rd year where I am the team's starting Goalie.</li>
+            <li>I am also on the Varsity diving team for the 3rd year. Last year I was on the conference and sectional teams.</li>
+            <li>I am also starting Cross Country this year, in order to achieve the school's "3 Sport Senior" badge.</li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <section class="profile-section">
+            <h2>Experience</h2>
+            <div class="experience">
+                <div class="experience-item">
+                    <h3>Swim Coach - Vernon Hills Park District</h3>
+                    <p><strong>Duration:</strong> Aug 2024 - Present (1 month)</p>
+                    <p><strong>Location:</strong> Vernon Hills, Illinois, United States</p>
+                    <p><strong>Responsibilities:</strong> Coaching</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Lifeguard - Vernon Hills Park District</h3>
+                    <p><strong>Duration:</strong> Jun 2022 - Present (2 years 3 months)</p>
+                    <p><strong>Responsibilities:</strong> Lifeguarding, Swim Lessons (Summer 2022)</p>
+                    <p><strong>Skills:</strong> Water Sports and Water Safety Training</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Swimming Instructor - Vernon Hills High School</h3>
+                    <p><strong>Duration:</strong> Oct 2021 - Present (2 years 11 months)</p>
+                    <p><strong>Location:</strong> Vernon Hills, Illinois, United States</p>
+                    <p><strong>Responsibilities:</strong> Water Sports, Swim Instruction</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Licenses & Certifications</h2>
+            <div class
