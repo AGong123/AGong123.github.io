@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
   height: 100%;
   width: 100%;
@@ -8,34 +9,48 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
+
 h1 {
   color: #ffffff; /* White text color for headings */
   text-align: center;
   padding-top: 20px; /* Space above heading */
   font-size: 2.5em; /* Larger font size for the main title */
 }
+
 h2, h3 {
   color: #e0e0e0; /* Consistent light text color */
   text-align: center;
   margin: 10px 0; /* Margins for spacing */
 }
+
+a {
+  color: #e0e0e0; /* Make links the same color as the rest of the text */
+  text-decoration: none; /* Remove underline from links */
+  font-family: 'Roboto', sans-serif; /* Ensure links use the same font */
+}
+
+a:hover {
+  color: #ffffff; /* Make link text white when hovered */
+  text-decoration: underline; /* Add underline on hover */
+}
+
 img {
   margin: 20px auto; /* Margin around image */
   display: block;
   border: 5px solid #ffffff; /* White border around image */
   border-radius: 10px; /* Rounded corners */
 }
+
 ul {
   list-style: none; /* Remove default list styling */
   padding: 0;
   text-align: center;
 }
+
 ul li {
   background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background for list items */
   color: #e0e0e0; /* Light text color */
   margin: 10px 0; /* Spacing between list items */
-  padding: 10px; /* Padding inside list items */
-  border-radius: 5px; /* Rounded corners */
   padding: 15px; /* Padding inside list items */
   border-radius: 10px; /* Rounded corners */
   font-size: 1.2em; /* Larger font size for list items */
@@ -54,3 +69,4 @@ audio {
   background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background for audio controls */
   border-radius: 5px; /* Rounded corners */
   padding: 10px; /* Padding around audio controls */
+}
