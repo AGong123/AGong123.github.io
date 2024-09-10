@@ -83,7 +83,7 @@ nav a {
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
-  font-family: Arial, sans-serif; /* Make sure this matches the font used on the homepage */
+  font-family: Arial, sans-serif;
 }
 
 nav a:hover {
