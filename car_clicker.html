@@ -46,11 +46,14 @@
   <h1>Car Clicker</h1>
 
   <!-- New Header -->
-  <h2>In my Car Clicker game, 
+  <h2>Car Clicker is a game where players collect cars by clicking an image that changes with each click. Upgrades like mechanics and manufacturers increase car earnings, and the design adjusts as players progress. The goal is to grow the car collection as big as you can!.</h2>
 
   <!-- Code Video -->
   <div class="media">
-    <img src="Photo & Audio/CCCode.mp4" alt="CCCode">
+    <video id="CCCode" controls>
+      <source src="Photo & Audio/CCCode.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
     <ul>
       <li>The game increases cars owned every second based on the number of manufacturers, which reflect automatic upgrades.</li>
       <li>The mechanic upgrade increases the number of cars earned per click, with the cost rising by 50 cars for each upgrade.</li>
@@ -59,13 +62,30 @@
 
   <!-- Game Video -->
   <div class="media">
-    <img src="Photo & Audio/CCGameplay.mp4" alt="CCGameplay">
+    <video id="CCGameplay" controls>
+      <source src="Photo & Audio/CCGameplay.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
     <ul>
       <li>Players can click an image of one of my favorite cars, which changes randomly from a list of cars each time they click.</li>
       <li>The game's background and button designs change color based on whether the player has enough cars to purchase an upgrade.</li>
     </ul>
   </div>
 
+  <script>
+    // Get all video elements on the page
+    const videos = document.querySelectorAll('video');
 
+    // Add event listeners to pause other videos when one is played
+    videos.forEach(video => {
+      video.addEventListener('play', () => {
+        videos.forEach(otherVideo => {
+          if (otherVideo !== video) {
+            otherVideo.pause();
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
