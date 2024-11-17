@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Learn To Code 2</title>
+  <title>My Game</title>
   <link href="style.css" rel="stylesheet" type="text/css">
   <link href="styles.css" rel="stylesheet" type="text/css">
   <style>
@@ -45,39 +45,48 @@
     <a href="Game.html">My Game</a>
   </nav>
 
-  <h1>Learn To Code - Unit 2</h1>
+
+  <h1>My Game</h1>
 
   <!-- New Header -->
-  <h2>In Learn To Code 2, we learned some new principles and expanded on the ones we learned about in Learn To Code 1. I have provided short descriptions about these new and expanded principles below, along with 2 snapshots of my code, and a video of it in action.</h2>
+  <h2>For our final project for this semesters iOS app development class, we have to make our very own app using Xcode.</h2>
 
-  <!-- First Picture -->
+  <!-- Code Video -->
   <div class="media">
-    <img src="Photo & Audio/Picture 3.png" alt="Picture 3">
-    <ul>
-      <li>Variables, we now have more, different values we need to store to later change our code.</li>
-      <li>Types define the data these new variables can hold.</li>
-    </ul>
-  </div>
-
-  <!-- Second Picture -->
-  <div class="media">
-    <img src="Photo & Audio/Picture 4.png" alt="Picture 4">
-    <ul>
-      <li>Initialization, we now have many new and different values to start a variable.</li>
-      <li>Parameters, we also have more of these to customize functions different behaviors.</li>
-    </ul>
-  </div>
-
-  <!-- Video -->
-  <div class="media">
-    <video controls>
-      <source src="Photo & Audio/Video 2.mp4" type="Video 2">
+    <video id="ShopVideo" controls>
+      <source src="Photo & Audio/ShopVideo.mp4" type="video/mp4">
     </video>
     <ul>
-      <li>World Building is how we would add different blocks, characters, and items into the map.</li>
-      <li>Arrays help organize multiple pieces of data in an ordered way.</li>
+      <li>I am using edited photos that I have put together, of roads and wilderness backgrounds as well as images of cars and other objects from the internet, to set the stage for the game.</li>
+      <li>BP</li>
     </ul>
   </div>
 
+  <!-- Game Video -->
+  <div class="media">
+    <video id="LoginVideo" controls>
+      <source src="Photo & Audio/LoginVideo.mp4" type="video/mp4">
+    </video>
+    <ul>
+      <li>BP</li>
+      <li>BP</li>
+    </ul>
+  </div>
+
+  <script>
+    // Get all video elements on the page
+    const videos = document.querySelectorAll('video');
+
+    // Add event listeners to pause other videos when one is played
+    videos.forEach(video => {
+      video.addEventListener('play', () => {
+        videos.forEach(otherVideo => {
+          if (otherVideo !== video) {
+            otherVideo.pause();
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
